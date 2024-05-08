@@ -31,9 +31,7 @@
                 <version>3.9.6</version>
                 <executions>
                     <execution>
-                        <goals>
-                            <goal>mvn package</goal>
-                        </goals>
+                        <defaultGoal>install</defaultGoal>
                     </execution>
                 </executions>
                 <configuration>
