@@ -28,8 +28,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.9.6</version>                
-                <goal>mvn org.apache.maven.plugins:maven-compiler-plugin:compile</goal>
+                <version>3.9.6</version>   
+                <goals>
+                    <goal>mvn org.apache.maven.plugins:maven-compiler-plugin:compile</goal>
+                </goals>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
