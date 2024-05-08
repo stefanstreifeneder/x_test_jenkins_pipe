@@ -32,7 +32,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>package</goal>
+                            <goal>mvn install</goal>
                         </goals>
                         <configuration>
                             <source>1.7</source>
