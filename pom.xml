@@ -32,7 +32,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>java</goal>
+                            <goal>mvn package</goal>
                         </goals>
                     </execution>
                 </executions>
