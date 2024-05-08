@@ -20,6 +20,9 @@
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
+            <goals>
+                <goal>mvn install</goal>
+            </goals>
         </dependency>
     </dependencies>
 
