@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mvn package' 
+                sh 'mvn org.apache.maven.plugins:maven-compiler-plugin:3.9.6:compile' 
             }
         }
     }
