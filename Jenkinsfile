@@ -6,7 +6,10 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "mvn org.apache.maven.plugins:maven-compiler-plugin:3.9.6:compile"
+                git url: 'https://github.com/cyrille-leclerc/multi-module-maven-project'
+                withMaven {
+                  sh "mvn clean verify"
+                } 
             }
         }
     }
