@@ -20,9 +20,6 @@
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
-            <goals>
-                <goal>mvn install</goal>
-            </goals>
         </dependency>
     </dependencies>
 
@@ -38,6 +35,9 @@
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
+                    <goals>
+                        <goal>mvn install</goal>
+                    </goals>
                 </configuration>
             </plugin>
             <plugin>
