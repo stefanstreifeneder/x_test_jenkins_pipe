@@ -36,10 +36,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.9.6</version>   
-                <goals>
-                    <goal>mvn org.apache.maven.plugins:maven-compiler-plugin:3.9.6:compile</goal>
-                </goals>
+                <version>3.9.6</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>mvn org.apache.maven.plugins:maven-compiler-plugin:3.9.6:compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
