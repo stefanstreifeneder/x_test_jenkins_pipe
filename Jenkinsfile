@@ -1,6 +1,6 @@
 pipeline {
     agent{
-        docker{
+        tools{
             image "maven:3.9.6-jdk-17"
         }
     }
