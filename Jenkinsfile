@@ -7,7 +7,7 @@ pipeline {
         stage('Build') { 
             steps {
                 withMaven {
-                  sh '$M2_HOME/mvn -v'
+                  sh 'mvn -v'
                   sh '$JAVA_HOME/bin/java -version'
                 } 
             }
