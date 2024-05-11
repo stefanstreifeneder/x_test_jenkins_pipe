@@ -8,10 +8,11 @@ pipeline {
         
         stage('Build') { 
 
-            
-            steps {
-                  sh '$M2_HOME/bin/mvn clean install' 
-                  sh '$JAVA_HOME/bin/java -version'
+            withMaven {
+                steps {
+                      sh '$M2_HOME/bin/mvn clean install' 
+                      sh '$JAVA_HOME/bin/java -version'
+                }
             }
         }
     }
