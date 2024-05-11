@@ -6,8 +6,10 @@ pipeline {
     }
     stages {
         
-        def mvnTool = tool 'Maven_3_9_6'
+        
         stage('Build') { 
+
+            def mvnTool = tool 'Maven_3_9_6'
             steps {
                 withMaven {
                   sh "$M2_HOME/bin/mvn clean install" 
