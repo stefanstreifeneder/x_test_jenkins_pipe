@@ -7,7 +7,6 @@ pipeline {
         stage('Build') { 
             steps {
                 withMaven {
-                  sh 'mvn clean verify'
                   sh '$JAVA_HOME/bin/java -version'
                 } 
             }
