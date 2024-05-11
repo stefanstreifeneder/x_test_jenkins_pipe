@@ -10,7 +10,6 @@ pipeline {
 
             withMaven {
                 steps {
-                      sh '$M2_HOME/bin/mvn clean install' 
                       sh '$JAVA_HOME/bin/java -version'
                 }
             }
