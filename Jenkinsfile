@@ -1,4 +1,4 @@
-pipeline {
+Npipeline {
     agent any
     tools { 
         maven 'maven 3.9.6'
@@ -8,7 +8,7 @@ pipeline {
             steps {
                 withMaven {
                   sh '$JAVA_HOME/bin/java -version'
-                    sh 'mvn -v'
+                    sh '$MAVEN_HOME/bin/mvn -v'
                 } 
             }
         }
