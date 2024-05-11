@@ -1,17 +1,14 @@
 pipeline {
     agent any
-    
     tools { 
-            maven 'maven 3.9.6'
+        maven 'maven 3.9.6'
     }
-    
     stages {
         stage('Build') { 
-
-            withMaven {
-                steps {
-                      sh '$JAVA_HOME/bin/java -version'
-                }
+            steps {
+                withMaven {
+                  sh "mvn clean verify"
+                } 
             }
         }
     }
