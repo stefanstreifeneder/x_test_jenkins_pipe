@@ -1,11 +1,11 @@
 pipeline {
     agent any
-    stages {
-        
-        tools { 
+    
+    tools { 
             maven 'maven 3.9.6'
-        }
-        
+    }
+    
+    stages {
         stage('Build') { 
 
             withMaven {
