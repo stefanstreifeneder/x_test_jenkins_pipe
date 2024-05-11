@@ -3,9 +3,10 @@ pipeline {
     
     tools { 
         maven 'maven 3.9.6'
-        def mvnTool = tool 'Maven_3_9_6'
     }
     stages {
+        
+        def mvnTool = tool 'Maven_3_9_6'
         stage('Build') { 
             steps {
                 withMaven {
