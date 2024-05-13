@@ -38,10 +38,11 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.9.6</version>
                 <executions>
-                    <execution>                                      
+                    <execution>  
+                        <id>copy</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>mvn install</goal>
+                            <goal>copy</goal>
                         </goals>
                         <configuration>
                             <source>1.7</source>
