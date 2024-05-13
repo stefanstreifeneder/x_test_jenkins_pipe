@@ -39,10 +39,10 @@
                 <version>3.9.6</version>
                 <executions>
                     <execution>  
-                        <id>copy</id>
+                        <id>unpack</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>copy</goal>
+                            <goal>unpack</goal>
                         </goals>
                         <configuration>
                             <source>1.7</source>
