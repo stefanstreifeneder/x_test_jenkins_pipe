@@ -27,16 +27,20 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.9.6</version>
+                <groupId
+                    <id>org.apache.maven.plugins</id>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.9.6</version>
+                     <phase>package</phase>
+                     <goals>
+                        <goal>mvn install</goal>
+                     </goals>
+                </groupId>
+
+                
                 <executions>
                     <execution>  
                         <id>unpack-dependencies</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>unpack-dependencies</goal>
-                        </goals>
                         <configuration>
                             <source>1.7</source>
                             <target>1.7</target>
