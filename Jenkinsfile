@@ -5,7 +5,7 @@ pipeline {
             steps {
                 withMaven {
                   sh '$JAVA_HOME/bin/java -version'
-                    sh 'mvn -v'
+                    sh '$MAVEN_HOME/bin/mvn -v'
                 } 
             }
         }
