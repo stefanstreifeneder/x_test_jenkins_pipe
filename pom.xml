@@ -29,7 +29,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.9.0</version>
+                    <version>3.9.6</version>
                      <goals>
                         <goal>mvn install</goal>
                      </goals>
@@ -45,6 +45,11 @@
                             <compilerArguments>
                                 <endorseddirs>${endorsed.dir}</endorseddirs>
                             </compilerArguments>
+                            
+                            <goals>
+                        <goal>mvn install</goal>
+                     </goals>
+                            
                         </configuration>
                     </execution>
                 </executions>                
