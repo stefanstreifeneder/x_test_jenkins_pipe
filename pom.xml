@@ -38,22 +38,16 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.9.6</version>
                 <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>mvn org.apache.maven.plugins:maven-compiler-plugin:3.9.6:compile</goal>
-                        </goals>                                        
-                        
-                    </execution>
-                </executions>
-
-                <configuration>
+                    <execution>                                      
+                        <configuration>
                             <source>1.7</source>
                             <target>1.7</target>
                             <compilerArguments>
                                 <endorseddirs>${endorsed.dir}</endorseddirs>
                             </compilerArguments>
                         </configuration>
+                    </execution>
+                </executions>                
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
