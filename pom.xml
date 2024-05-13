@@ -41,7 +41,7 @@
                     <execution>                                      
                         <phase>package</phase>
                         <goals>
-                            <goal>mvn -install</goal>
+                            <goal>mvn install</goal>
                         </goals>
                         <configuration>
                             <source>1.7</source>
