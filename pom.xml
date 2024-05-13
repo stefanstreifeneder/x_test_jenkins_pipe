@@ -28,7 +28,6 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                    <id>org.apache.maven.plugins</id>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.9.6</version>
                      <phase>package</phase>
